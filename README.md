@@ -21,3 +21,7 @@ Development course's final touchstone.
 
 - [favicon.png](https://files.catbox.moe/ac7t5r.png)
 - [inkwell_blue_logo.png](https://files.catbox.moe/el0a3j.png)
+
+### Github Pages Site:
+
+[Bookhaven Bookstore](https://tomit4.github.io/book_haven_bookstore/index.html)
