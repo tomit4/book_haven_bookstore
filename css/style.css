@@ -36,3 +36,13 @@ input,
 textarea {
     min-width: 0;
 }
+
+#hours {
+    width: 275px;
+    border: 1px solid var(--bookish-black);
+}
+
+#hours th,
+#hours td {
+    border: 1px solid var(--bookish-black);
+}
