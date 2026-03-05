@@ -6,6 +6,12 @@
 
 :root {
     color-scheme: light dark;
+    --inkwell-blue: #2e4057;
+    --intensity-indigo: #ee583f;
+    --dusty-rose: #f7b3cc;
+    --aged-gold: #c7b65e;
+    --parchment-white: #fff7ee;
+    --bookish-black: #131c26;
 }
 
 body {
