@@ -14,7 +14,7 @@
 		<img style="display: none" src="./assets/images/hero_1440p.jpg" alt="an image of books on a bookshelf">
 		<header>
 			<img src="./assets/icons/logos/inkwell_blue_logo.png" width="100" alt="Bookhaven Bookstore Logo">
-			<h1>Bookhaven Bookstore</h1>
+			<h1 class="hero-h1">Bookhaven Bookstore</h1>
 		</header>
 		<nav class="mobile-navbar">
 			<ul class="mobile-navbar-list">
@@ -66,8 +66,73 @@
 		</nav>
 		<hr>
 		<main>
-			<h2>ABOUT</h2>
-			<p>PUT MAIN CONTENT HERE</p>
+			<section id="about-section-1">
+				<h2 class="about-heading-h2">About Us</h2>
+				<p>
+					Bookhaven bookstore was established in 1993. Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</section>
+			<hr>
+			<section id="about-section-2">
+				<h3 class="about-heading-h3">Business Hours</h3>
+				<table id="hours">
+					<tr>
+						<th colspan="3">Hours of Operations</th>
+					</tr>
+					<tr>
+						<th>Days</th>
+						<th>Open</th>
+						<th>Close</th>
+					</tr>
+					<tr>
+						<th>Mon-Fri</th>
+						<th>8am</th>
+						<th>8pm</th>
+					</tr>
+					<tr>
+						<th>Sat</th>
+						<th>8am</th>
+						<th>2pm</th>
+					</tr>
+					<tr>
+						<th>Sun</th>
+						<td colspan="2">Closed</td>
+					</tr>
+				</table>
+			</section>
+			<hr>
+			<section id="about-section-3">
+				<h2 class="about-heading-h2">Contact Us</h2>
+				<form action="application/x-www-form-urlencoded" method="post" id="about-contact-form">
+					<label for="name">
+						Name:
+						<input type="text" name="name" required>
+					</label>
+					<br>
+					<label for="email">
+						Email Address:
+						<input type="email" name="email" required>
+					</label>
+					<br>
+					<label for="phone">
+						Phone Number:
+						<input type="tel" name="phone">
+					</label>
+					<br>
+					<label>
+						Feedback/Order Information:
+						<textarea name="feedback" id="feedback-box" rows="7" cols="30" required></textarea>
+					</label>
+					<br>
+					<input type="submit" id="about-submit-form-btn" value="Submit">
+					<input type="reset" id="about-clear-form-btn" value="Clear Form">
+				</form>
+			</section>
 		</main>
 		<hr>
 		<footer>
