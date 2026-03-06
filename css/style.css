@@ -207,7 +207,6 @@ body {
 }
 
 /* MOBILE NAV LIST */
-
 #desktop-navbar {
     display: none;
 }
@@ -396,6 +395,7 @@ MEDIA QUERIES - DESKTOP
 **********************/
 
 @media all and (min-width: 800px) {
+    /* HERO */
     #hero-image-mobile {
         display: none;
     }
@@ -426,6 +426,7 @@ MEDIA QUERIES - DESKTOP
         font-size: 3em;
     }
 
+    /* NAVBAR */
     #mobile-navbar {
         display: none;
     }
@@ -457,5 +458,44 @@ MEDIA QUERIES - DESKTOP
 
     .desktop-navbar-list-link:hover {
         text-decoration: underline;
+    }
+
+    /* FOOTER */
+    #footer-sub-socials {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    #footer-socials {
+        margin-top: 1rem;
+        margin-right: 1rem;
+        justify-content: right;
+        border-bottom: none;
+    }
+
+    #sign-up {
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    #sign-up-newsletter {
+        width: 250px;
+    }
+
+    #sign-up-form {
+        margin-top: 2rem;
+        margin-left: -2rem;
+    }
+
+    #sign-up-form-email-field {
+        width: 250px;
+    }
+
+    #footer-external-links-list {
+        margin-top: -2.5rem;
+    }
+
+    #footer-external-links-list {
+        border-top: none;
     }
 }
