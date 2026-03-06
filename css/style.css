@@ -207,6 +207,11 @@ body {
 }
 
 /* MOBILE NAV LIST */
+
+#desktop-navbar {
+    display: none;
+}
+
 #mobile-navbar {
     display: flex;
     position: relative;
@@ -386,6 +391,71 @@ footer {
     border: 1px solid var(--bookish-black);
 }
 
-/*********************
-MEDIA QUERIES
-*********************/
+/**********************
+MEDIA QUERIES - DESKTOP
+**********************/
+
+@media all and (min-width: 800px) {
+    #hero-image-mobile {
+        display: none;
+    }
+
+    #hero-image-desktop {
+        display: block;
+        opacity: 40%;
+        max-height: 60vh;
+    }
+
+    #hero-section {
+        border-bottom: none;
+    }
+
+    #hero-header {
+        top: 20vh;
+    }
+
+    #hero-image-logo {
+        border: 4px solid var(--parchment-white);
+        scale: 1.25;
+    }
+
+    #hero-h1 {
+        position: static;
+        color: var(--parchment-white);
+        line-height: 1.125;
+        font-size: 3em;
+    }
+
+    #mobile-navbar {
+        display: none;
+    }
+
+    #desktop-navbar {
+        display: block;
+        width: 100vw;
+        background-color: var(--inkwell-blue);
+        padding: 0.5rem 1rem 1rem 1rem;
+        border-bottom: 3px solid var(--aged-gold);
+    }
+
+    .desktop-navbar-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .desktop-navbar-list-link {
+        text-align: center;
+        font-size: 1.125em;
+        font-weight: 900;
+        text-decoration: none;
+        color: var(--aged-gold);
+        padding: 1rem 2rem;
+    }
+
+    .desktop-navbar-list-link:hover {
+        text-decoration: underline;
+    }
+}
