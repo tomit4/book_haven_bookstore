@@ -126,6 +126,10 @@ body {
     opacity: 40%;
 }
 
+#hero-image-desktop {
+    display: none;
+}
+
 #hero-header {
     position: absolute;
     top: 10vh;
