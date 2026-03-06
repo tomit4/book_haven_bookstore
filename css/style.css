@@ -408,6 +408,8 @@ MEDIA QUERIES - DESKTOP
         display: block;
         opacity: 40%;
         max-height: 60vh;
+        width: 100vw;
+        object-fit: cover;
     }
 
     #hero-section {
