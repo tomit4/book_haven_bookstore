@@ -18,7 +18,6 @@ DEFAULT CSS
 }
 
 body {
-    font-family: Aria, system-ui;
     font-size: 1.125rem;
     line-height: 1.5;
 }
@@ -85,9 +84,23 @@ FONT FAMILIES
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Aria";
+    src: url("../assets/fonts/Aria-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /*********************
 MOBILE CSS
 *********************/
+
+body {
+    font-family: Aria, Calibri, Comfortaa, system-ui;
+    background-color: var(--parchment-white);
+    color: var(--bookish-black);
+}
 
 #hours {
     width: 275px;
