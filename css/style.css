@@ -146,16 +146,79 @@ body {
     line-height: 1.125;
 }
 
-/* NAVBAR */
-#mobile-navbar {
+/* HAMBURGER/CLOSE  BUTTON */
+#hamburger-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+#hamburger-btn-img {
+    scale: 3;
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    border: 1px solid var(--inkwell-blue);
+    border-radius: 2px;
+}
+
+#close-btn-img {
+    scale: 2;
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    border: 1px solid var(--inkwell-blue);
+    border-radius: 2px;
+}
+
+/* Close Hamburger Button */
+
+#close-btn-img {
+    display: none;
+}
+
+#mobile-navbar:hover #hamburger-btn-img,
+#hamburger-btn:hover #hamburger-btn-img {
+    display: none;
+}
+
+#mobile-navbar:hover #close-btn-img,
+#hamburger-btn:hover #close-btn-img {
+    display: block;
+}
+
+/* TODO: Change to an onclick event in JS */
+#hamburger-btn-img:hover {
+    background-color: var(--parchment-white);
+    color: var(--inkwell-blue);
+    cursor: pointer;
+    border: 1px solid var(--parchment-white);
+    border-radius: 2px;
+}
+
+/* TODO: Change  to an onclick event in JS */
+#hamburger-btn:hover + nav,
+#mobile-navbar > nav:hover {
+    display: block;
+}
+
+/* MOBILE NAV LIST */
+#mobile-navbar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -48px;
 }
 
 #mobile-navbar > nav {
-    top: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
     left: 50vw;
+    transform: translateX(-55%);
     background-color: var(--inkwell-blue);
     text-align: center;
     border-radius: 0 0 5px 5px;
@@ -173,6 +236,8 @@ body {
     width: 100%;
     text-align: center;
     font-weight: 900;
+    font-size: 1.125em;
+    text-decoration: none;
     color: var(--parchment-white);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -182,6 +247,7 @@ body {
 .mobile-navbar-list-link:hover {
     color: var(--inkwell-blue);
     background-color: var(--parchment-white);
+    text-decoration: underline;
 }
 
 #hours {
