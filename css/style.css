@@ -40,6 +40,7 @@ video {
 input,
 textarea {
     min-width: 0;
+    background-color: var(--parchment-white);
 }
 
 /*********************
@@ -387,6 +388,9 @@ footer {
 /*********************
  * HOME PAGE
 *********************/
+.home-page-section {
+    padding: 0.75rem 0 0.75rem 0;
+}
 
 .home-page-h2 {
     font-family: Arial;
@@ -566,14 +570,104 @@ footer {
  * ABOUT PAGE
 *********************/
 
+.about-section {
+    padding: 0.75rem 0 0.75rem 0;
+    border-bottom: 2px solid var(--bookish-black);
+}
+
+.about-heading-h2 {
+    font-family: Arial;
+    font-weight: 900;
+}
+
+#about-page-blurb {
+    font-family: Calibri;
+}
+
+#about-heading-h3 {
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+}
+
 #hours {
-    width: 275px;
+    width: min(100%, 400px);
     border: 1px solid var(--bookish-black);
+    margin-inline: auto;
+    margin-bottom: 1rem;
 }
 
 #hours th,
 #hours td {
+    font-family: Calibri;
+    font-weight: 500;
+    text-align: center;
     border: 1px solid var(--bookish-black);
+}
+
+#about-contact-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.25rem;
+    font-family: Comfortaa;
+}
+
+#about-contact-form input,
+#about-contact-form textarea {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--bookish-black);
+    font-size: 1rem;
+}
+
+#about-custom-order-check {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+    margin-bottom: 0.5rem;
+    accent-color: var(--inkwell-blue);
+}
+
+#about-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 0.5rem;
+}
+
+#about-custom-order-check-label {
+    margin-top: 8px;
+}
+
+#about-contact-form-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-submit-form-btn,
+#about-clear-form-btn {
+    width: 60vw;
+    height: 4rem;
+    max-width: 400px;
+    font-family: Comfortaa;
+    font-weight: 900;
+}
+
+#about-submit-form-btn {
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+}
+
+#about-clear-form-btn {
+    background-color: var(--aged-gold);
+    color: var(--inkwell-blue);
+}
+
+#about-section-3 {
+    border-bottom: none;
 }
 
 /*********************

@@ -77,9 +77,9 @@
 			</nav>
 		</div>
 		<main>
-			<section id="about-section-1">
+			<section class="about-section" id="about-section-1">
 				<h2 class="about-heading-h2">About Us</h2>
-				<p>
+				<p id="about-page-blurb">
 					Bookhaven bookstore was established in 1993. Lorem ipsum dolor sit amet, consectetur
 					adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -88,9 +88,8 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 			</section>
-			<hr>
-			<section id="about-section-2">
-				<h3 class="about-heading-h3">Business Hours</h3>
+			<section class="about-section" id="about-section-2">
+				<h3 id="about-heading-h3">Business Hours</h3>
 				<table id="hours">
 					<tr>
 						<th colspan="3">Hours of Operations</th>
@@ -117,8 +116,7 @@
 					</tr>
 				</table>
 			</section>
-			<hr>
-			<section id="about-section-3">
+			<section class="about-section" id="about-section-3">
 				<h2 class="about-heading-h2">Contact Us</h2>
 				<form action="application/x-www-form-urlencoded" method="post" id="about-contact-form">
 					<label for="name">
@@ -136,18 +134,18 @@
 						<input type="tel" name="phone">
 					</label>
 					<br>
-					<label>
+					<label for="feedback">
 						Feedback/Order Information:
 						<textarea name="feedback" id="feedback-box" rows="7" cols="30" required></textarea>
 					</label>
-					<br>
-					<input type="submit" id="about-submit-form-btn" value="Submit">
-					<input type="reset" id="about-clear-form-btn" value="Clear Form">
-					<br>
-					<label>
+					<div id="about-checkbox-container">
 						<input type="checkbox" id="about-custom-order-check" value="Custom Order">
-						Custom Order
-					</label>
+						<label id="about-custom-order-check-label" for="about-custom-order-check">Custom Order</label>
+					</div>
+					<div id="about-contact-form-buttons">
+						<input type="submit" id="about-submit-form-btn" value="Submit">
+						<input type="reset" id="about-clear-form-btn" value="Clear Form">
+					</div>
 				</form>
 			</section>
 		</main>
