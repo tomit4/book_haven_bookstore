@@ -755,6 +755,88 @@ footer {
 * CUSTOM PAGE
 *********************/
 
+.custom-section {
+    padding: 0.75rem 0 0.75rem 0;
+    border-bottom: 2px solid var(--bookish-black);
+}
+
+.custom-heading-h2 {
+    font-family: Arial;
+    font-weight: 900;
+}
+
+#customer-spotlight-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-spotlight-card {
+    background-color: var(--inkwell-blue);
+    border: 3px solid var(--aged-gold);
+    border-radius: 5px;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.customer-spotlight-name {
+    font-family: Aria;
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: var(--aged-gold);
+}
+
+.customer-spotlight-blurb {
+    font-family: Calibri;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--parchment-white);
+}
+
+#community-involvement-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community-involvement-card {
+    background-color: var(--aged-gold);
+    margin: 1rem;
+    padding: 1rem;
+    border: 3px solid var(--inkwell-blue);
+    border-radius: 5px;
+    max-width: 650px;
+}
+
+.community-involvement-title {
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: var(--inkwell-blue);
+}
+
+.community-involvement-blurb {
+    font-family: Comfortaa;
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--inkwell-blue);
+}
+
+#custom-events-and-collaborations,
+#custom-inquieries {
+    font-family: Calibri;
+    font-size: 1.25rem;
+}
+
+#custom-section-3 {
+    border-bottom: none;
+}
+
+#custom-inqueries-email {
+    color: var(--inkwell-blue);
+    font-weight: 900;
+}
+
 /**********************
 MEDIA QUERIES - DESKTOP
 **********************/
@@ -928,4 +1010,20 @@ MEDIA QUERIES - DESKTOP
     /* ABOUT PAGE */
 
     /* CUSTOM PAGE */
+    #customer-spotlight-gallery {
+        flex-direction: row;
+    }
+
+    .customer-spotlight-card {
+        flex: 1 1 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 60vh;
+        padding-bottom: 7rem;
+    }
+
+    .customer-spotlight-name {
+        margin-top: 5rem;
+    }
 }
