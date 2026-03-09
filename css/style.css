@@ -384,6 +384,188 @@ footer {
  * PAGE CONTENTS
 *********************/
 
+/*********************
+ * HOME PAGE
+*********************/
+
+.home-page-h2 {
+    font-family: Arial;
+    font-weight: 900;
+}
+
+#home-page-client-highlights {
+    font-family: Calibri;
+}
+
+#promo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-card {
+    border: 3px solid var(--aged-gold);
+    background-color: var(--inkwell-blue);
+    border-radius: 5px;
+    height: 20rem;
+    margin: 0.25rem 0 0.25rem 0;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-description {
+    font-family: Comfortaa;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--parchment-white);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: -2em;
+}
+
+.promo-image {
+    border: 3px solid var(--aged-gold);
+    border-radius: 5px;
+}
+
+#home-page-section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+}
+
+#shop-now-gallery-h2 {
+    font-family: Comfortaa;
+    font-weight: 900;
+    color: var(--inkwell-blue);
+    margin-top: -0.5rem;
+    margin-bottom: -0.25rem;
+}
+
+#shop-now-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--aged-gold);
+    border: 3px solid var(--inkwell-blue);
+    border-radius: 5px;
+}
+
+.shop-now-gallery-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-now-gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-now-gallery-image {
+    margin: 1rem;
+    border: 3px solid var(--inkwell-blue);
+    border-radius: 5px;
+}
+
+.shop-now-btn {
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: Aria;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+#home-page-section-3 {
+    background-color: var(--dusty-rose);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid var(--inkwell-blue);
+    border-radius: 5px;
+}
+
+.home-page-h3 {
+    font-family: Comfortaa;
+    color: var(--inkwell-blue);
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#why-shop-here-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dusty-rose);
+    padding: 1rem;
+}
+
+.why-shop-here-gallery-image {
+    border: 3px solid var(--inkwell-blue);
+    border-radius: 5px;
+    margin-bottom: -0.25rem;
+}
+
+.why-shop-here-sub {
+    font-family: Comfortaa;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--inkwell-blue);
+}
+
+#shop-by-category-header {
+    font-family: Comfortaa;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--bookish-black);
+}
+
+#shop-by-category-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.shop-by-category-item {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.shop-by-category-link {
+    font-family: Aria;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    color: var(--inkwell-blue);
+}
+
+/*********************
+* GALLERY PAGE
+*********************/
+
+/*********************
+ * ABOUT PAGE
+*********************/
+
 #hours {
     width: 275px;
     border: 1px solid var(--bookish-black);
@@ -393,6 +575,10 @@ footer {
 #hours td {
     border: 1px solid var(--bookish-black);
 }
+
+/*********************
+* CUSTOM PAGE
+*********************/
 
 /**********************
 MEDIA QUERIES - DESKTOP
@@ -504,4 +690,53 @@ MEDIA QUERIES - DESKTOP
     #footer-external-links-list {
         border-top: none;
     }
+
+    /* HOME PAGE */
+    #promo-section {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .promo-card {
+        height: 15em;
+    }
+
+    .promo-image:hover {
+        scale: 1.05;
+    }
+
+    .shop-now-gallery-row {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shop-now-btn:hover {
+        scale: 1.05;
+        cursor: pointer;
+    }
+
+    #why-shop-here-gallery {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #shop-by-category-list {
+        grid-template-columns: repeat(2, auto);
+        gap: 0.5rem 3rem;
+    }
+
+    .shop-by-category-link:hover {
+        text-decoration: underline;
+    }
+
+    /* GALLERY PAGE */
+
+    /* ABOUT PAGE */
+
+    /* CUSTOM PAGE */
 }

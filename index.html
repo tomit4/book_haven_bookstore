@@ -77,9 +77,9 @@
 			</nav>
 		</div>
 		<main>
-			<section id="home-page-section-1">
+			<section class="home-page-section" id="home-page-section-1">
 				<h2 class="home-page-h2">Welcome To Book Haven Bookstore!</h2>
-				<p>CLIENT HIGHLIGHTS - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				<p id="home-page-client-highlights">CLIENT HIGHLIGHTS - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
 					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -87,47 +87,63 @@
 					anim id est laborum.</p>
 				<div id="promo-section">
 					<div class="promo-card">
-						<p class="promo-description">Promo description</p>
-						<img class="promo-image" src="./assets/images/Client3_Book1.png" width="350" alt="an image of a product">
-						<button class="promo-add-to-cart-btn">Add To Cart</button>
+						<p class="promo-description">On Sale Today!</p>
+						<a class="promo-link" rel="noopener noreferrer" href="./gallery.html">
+							<img class="promo-image" src="./assets/images/Client3_Book1.png" alt="an image of a product">
+						</a>
 					</div>
 					<div class="promo-card">
-						<p class="promo-description">Promo description</p>
-						<img class="promo-image" src="./assets/images/Client3_Book2.png" width="350" alt="an image of a product">
-						<button class="promo-add-to-cart-btn">Add To Cart</button>
+						<p class="promo-description">Employee Picks!</p>
+						<a class="promo-link" rel="noopener noreferrer" href="./gallery.html">
+							<img class="promo-image" src="./assets/images/Client3_Book2.png" alt="an image of a product">
+						</a>
 					</div>
 					<div class="promo-card">
-						<p class="promo-description">Promo description</p>
-						<img class="promo-image" src="./assets/images/Client3_Book3.png" width="350" alt="an image of a product">
-						<button class="promo-add-to-cart-btn">Add To Cart</button>
+						<p class="promo-description">New Works!</p>
+						<a class="promo-link" rel="noopener noreferrer" href="./gallery.html">
+							<img class="promo-image" src="./assets/images/Client3_Book3.png" alt="an image of a product">
+						</a>
 					</div>
 				</div>
 			</section>
-			<hr>
-			<section id="home-page-section-2">
+			<section class="home-page-section" id="home-page-section-2">
 				<div id="shop-now-gallery">
-					<img src="./assets/images/Client3_Magazine1.png" alt="Ball, a magazine about pickleball">
-					<button class="shop-now-btn" onclick="window.location.href='./gallery.html'">SHOP NOW</button>
-					<img src="./assets/images/Client3_Magazine2.png" alt="Travel, a magazine for travelers">
+					<h2 id="shop-now-gallery-h2">See Our Gallery!</h2>
+					<div class="shop-now-gallery-row">
+						<div class="shop-now-gallery-item">
+							<img class="shop-now-gallery-image" src="./assets/images/Client3_Magazine1.png" alt="Ball, a magazine about pickleball">
+						</div>
+						<div class="shop-now-gallery-item">
+							<img class="shop-now-gallery-image" src="./assets/images/Client3_Magazine2.png" alt="Travel, a magazine for travelers">
+						</div>
+					</div>
 					<button class="shop-now-btn" onclick="window.location.href='./gallery.html'">SHOP NOW</button>
 				</div>
 			</section>
-			<hr>
-			<section id="home-page-section-3">
+			<section class="home-page-section" id="home-page-section-3">
 				<h3 class="home-page-h3">Value Deals/Perks</h3>
 				<div id="why-shop-here-gallery">
-					<a target="_blank" rel="noopener noreferrer" href="./gallery.html">
-						<img src="./assets/images/Client3_ToteBag.png" alt="A canvas tote bag with black lettering that says ALL I DO IS READ READ READ">
-					</a>
-					<a target="_blank" rel="noopener noreferrer" href="./gallery.html">
-						<img src="./assets/images/Client3_Notebook.png" alt="A note book with text on the cover that says Book Haven Bookstore">
-					</a>
-					<a target="_blank" rel="noopener noreferrer" href="./gallery.html">
-						<img src="./assets/images/Client3_Stickers.png" alt="A set of four Book Haven Bookstore stickers that promote reading">
-					</a>
+					<div class="why-shop-here-gallery-item">
+						<a target="_blank" rel="noopener noreferrer" href="./gallery.html">
+							<img class="why-shop-here-gallery-image" src="./assets/images/Client3_ToteBag.png" alt="A canvas tote bag with black lettering that says ALL I DO IS READ READ READ">
+						</a>
+						<p class="why-shop-here-sub">Free Tote Bags!</p>
+					</div>
+					<div class="why-shop-here-gallery-item">
+						<a target="_blank" rel="noopener noreferrer" href="./gallery.html">
+							<img class="why-shop-here-gallery-image" src="./assets/images/Client3_Notebook.png" alt="A note book with text on the cover that says Book Haven Bookstore">
+						</a>
+						<p class="why-shop-here-sub">Discount Journals!</p>
+					</div>
+					<div class="why-shop-here-gallery-item">
+						<a target="_blank" rel="noopener noreferrer" href="./gallery.html">
+							<img class="why-shop-here-gallery-image" src="./assets/images/Client3_Stickers.png" alt="A set of four Book Haven Bookstore stickers that promote reading">
+						</a>
+						<p class="why-shop-here-sub">Cool Stickers!</p>
+					</div>
 				</div>
 			</section>
-			<section id="home-page-section-4">
+			<section class="home-page-section" id="home-page-section-4">
 				<h3 id="shop-by-category-header">Shop By Category</h3>
 				<ul id="shop-by-category-list">
 					<li class="shop-by-category-item">
