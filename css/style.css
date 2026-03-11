@@ -648,6 +648,71 @@ footer {
     color: var(--bookish-black);
 }
 
+#cart-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--parchment-white);
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+#cart-modal-h3,
+#cart-modal-p {
+    font-family: Aria;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#cart-modal-h3 {
+    padding-top: 2em;
+    font-weight: 900;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#cart-modal button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Aria;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+#clear-cart-btn {
+    color: var(--inkwell-blue);
+    background-color: var(--aged-gold);
+}
+
+#process-order-btn {
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+}
+
+#close-cart-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--inkwell-blue);
+    color: var(--aged-gold);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /*********************
  * ABOUT PAGE
 *********************/
