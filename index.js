@@ -52,7 +52,7 @@ if (hamburgerBtn) {
 
 // FOOTER
 if (submitBtn) {
-    submitBtn.addEventListener("click", e => {
+    submitBtn.addEventListener("submit", e => {
         e.preventDefault();
         alert("Thank you for subscribing.");
     });
