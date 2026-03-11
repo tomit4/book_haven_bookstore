@@ -1,6 +1,12 @@
 /*********************
  * QUERY SELECTORS
  *********************/
+
+// MOBILE-NAVBAR
+const mobileNavbar = document.querySelector("#mobile-navbar");
+const hamburgerBtn = document.querySelector("#hamburger-btn");
+const mobileLinks = document.querySelectorAll(".mobile-navbar-list-link");
+
 // FOOTER
 const submitBtn = document.querySelector("#sign-up-submit-button");
 
@@ -31,6 +37,18 @@ if (cartArray.length) sessionStorage.setItem("cart", JSON.stringify(cartArray));
 
 /* NOTE: Pages in real world applications would have separate
 .js files for each of these, that would avoid the redundant if statements.*/
+
+// MOBILE NAVBAR
+if (hamburgerBtn) {
+    hamburgerBtn.addEventListener("click", () => {
+        mobileNavbar.classList.toggle("open");
+    });
+    mobileLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileNavbar.classList.remove("open");
+        });
+    });
+}
 
 // FOOTER
 if (submitBtn) {
