@@ -648,7 +648,7 @@ footer {
     color: var(--bookish-black);
 }
 
-#cart-modal {
+#cart-modal[open] {
     display: flex;
     flex-direction: column;
     justify-content: center;
