@@ -13,9 +13,7 @@ const clearCartBtn = document.querySelector("#clear-cart-btn");
 const processOrderBtn = document.querySelector("#process-order-btn");
 
 // ABOUT
-const aboutSubmitFormBtn = document.querySelector("#about-submit-form-btn");
 const aboutContactForm = document.querySelector("#about-contact-form");
-// const aboutClearFormBtn = document.querySelector("#about-clear-form-btn");
 
 /*********************
  * EVENT LISTENERS
