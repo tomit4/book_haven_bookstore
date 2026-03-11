@@ -5,7 +5,9 @@
 const submitBtn = document.querySelector("#sign-up-submit-button");
 
 // GALLERY
-const productAddToCartBtn = document.querySelector(".product-add-to-cart-btn");
+const productAddToCartBtns = document.querySelectorAll(
+    ".product-add-to-cart-btn",
+);
 const cartModal = document.querySelector("#cart-modal");
 const viewCartBtn = document.querySelector("#gallery-view-cart-btn");
 const closeCartBtn = document.querySelector("#close-cart-modal");
@@ -31,11 +33,13 @@ if (submitBtn) {
 }
 
 // GALLERY
-if (productAddToCartBtn) {
-    productAddToCartBtn.addEventListener("click", e => {
-        e.preventDefault();
-        alert("Item added to the cart.");
-    });
+if (productAddToCartBtns.length) {
+    productAddToCartBtns.forEach(productAddToCartBtn =>
+        productAddToCartBtn.addEventListener("click", e => {
+            e.preventDefault();
+            alert("Item added to the cart.");
+        }),
+    );
 }
 
 // GALLERY - MODAL
