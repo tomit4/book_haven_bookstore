@@ -146,7 +146,7 @@ if (aboutContactForm) {
             customOrder: check.checked,
         };
         localStorage.setItem(name.value, JSON.stringify(contactUsData));
-        alert("Thank you for your message.");
+        alert(`Thank you for your message, ${name.value}.`);
     });
 }
 
