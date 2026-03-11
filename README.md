@@ -72,7 +72,7 @@ folder. These include:
 - **Hero images**
 - **Product images**
 - **Logos and favicon**
-- **Custom fonts (Comfortaa, Cabria, Aria)**
+- **Custom fonts (Comfortaa, Calibri, Arial)**
 
 ---
 
