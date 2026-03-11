@@ -15,15 +15,15 @@ const clearCartBtn = document.querySelector("#clear-cart-btn");
 const processOrderBtn = document.querySelector("#process-order-btn");
 const products = document.querySelectorAll(".product-title");
 
+// ABOUT
+const aboutContactForm = document.querySelector("#about-contact-form");
+
 /* Array for products/cart items.
 NOTE: Just a stand in for an actual Database,
 this actually consumes client memory unnecessarily...*/
 const productsArray = [];
 let cartArray = JSON.parse(sessionStorage.getItem("cart")) || [];
 if (cartArray.length) sessionStorage.setItem("cart", JSON.stringify(cartArray));
-
-// ABOUT
-const aboutContactForm = document.querySelector("#about-contact-form");
 
 /*********************
  * EVENT LISTENERS
@@ -74,7 +74,6 @@ if (productAddToCartBtns.length) {
 }
 
 // GALLERY - MODAL
-
 if (viewCartBtn) {
     viewCartBtn.addEventListener("click", () => {
         cartModal.showModal();
@@ -89,15 +88,29 @@ if (closeCartBtn) {
 if (clearCartBtn) {
     clearCartBtn.addEventListener("click", e => {
         e.preventDefault();
-        sessionStorage.removeItem("cart");
-        renderCart();
+        cartArray = JSON.parse(sessionStorage.getItem("cart")) || [];
+        if (cartArray.length) {
+            sessionStorage.removeItem("cart");
+            renderCart();
+            alert("Your cart has been cleared.");
+        } else {
+            alert("You have no items in your cart to clear.");
+        }
     });
 }
 
 if (processOrderBtn) {
     processOrderBtn.addEventListener("click", e => {
         e.preventDefault();
-        alert("Thank you for your order.");
+        cartArray = JSON.parse(sessionStorage.getItem("cart")) || [];
+        if (cartArray.length) {
+            sessionStorage.removeItem("cart");
+            renderCart();
+            cartModal.close();
+            alert("Thank you for your order.");
+        } else {
+            alert("You have no items in your cart to process.");
+        }
     });
 }
 
@@ -105,6 +118,16 @@ if (processOrderBtn) {
 if (aboutContactForm) {
     aboutContactForm.addEventListener("submit", e => {
         e.preventDefault();
+        const { name, email, phone, feedback, check } =
+            aboutContactForm.elements;
+        const contactUsData = {
+            name: name.value,
+            email: email.value,
+            phone: phone.value,
+            feedback: feedback.value,
+            customOrder: check.checked,
+        };
+        localStorage.setItem(name.value, JSON.stringify(contactUsData));
         alert("Thank you for your message.");
     });
 }
@@ -118,6 +141,7 @@ const renderCart = () => {
     for (let i = 0; i < cartArray.length; i++) {
         const productTitle = cartArray[i];
         const liElement = document.createElement("li");
+        liElement.classList.add("cart-item");
         liElement.appendChild(document.createTextNode(productTitle));
         cartList.appendChild(liElement);
     }
